@@ -716,40 +716,38 @@
                     </div>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
-                    <input type="hidden" name="access_key" value="eb2e0b98-982b-40f7-97ad-64b8fbafb40e">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" name="name" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" name="email" class="contact__input">
-                        </div>
-                    </div>
-
+               <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid" id="contactForm">
+                <input type="hidden" name="access_key" value="e27407b7-734b-4013-9a68-9e0b7e6bb850">
+            
+                <div class="contact__inputs grid">
                     <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <label class="contact__label">Name</label>
+                        <input type="text" name="name" class="contact__input" required minlength="3" placeholder="Enter your name">
                     </div>
-
+            
                     <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label class="contact__label">E-mail</label>
+                        <input type="email" name="email" class="contact__input" required placeholder="Enter your email">
                     </div>
+                </div>
+            
+                <div class="contact__content">
+                    <label class="contact__label">Subject</label>
+                    <input type="text" name="subject" class="contact__input" required minlength="3" placeholder="Enter subject">
+                </div>
+            
+                <div class="contact__content">
+                    <label class="contact__label">Description</label>
+                    <textarea name="message" cols="0" rows="7" class="contact__input" required minlength="10" placeholder="Write your message..."></textarea>
+                </div>
+            
+                <div>
+                    <button class="button-74" role="button" type="submit">Submit
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
 
-                    <div>
-                        <!-- <button type="submit">
-                            Submit
-                            <i class="uil uil-message button__icon"></i>
-                        </button> -->
-                        <button class="button-74" role="button" type="submit">Submit
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
             </div>
 
         </section>
